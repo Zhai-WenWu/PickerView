@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/hospital_service_set_activity1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="10dp"
+
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:id="@+id/text_time"
+        android:weightSum="5"
+        android:layout_above="@+id/picker"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:layout_height="60dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="时"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="时"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/queding"
+        android:weightSum="5"
+        android:id="@+id/picker"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true">
+
+        <com.example.zhai_pc.pickerview.PickerView
+            android:id="@+id/minute_pv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scrollbarSize="19dp"
+            android:layout_height="160dp" />
+
+
+
+        <com.example.zhai_pc.pickerview.PickerView
+            android:id="@+id/second_pv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp" />
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="至"
+            android:textColor="#444444"
+            android:textSize="19sp" />
+
+        <com.example.zhai_pc.pickerview.PickerView
+            android:id="@+id/minute_pv1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp" />
+
+
+        <com.example.zhai_pc.pickerview.PickerView
+            android:id="@+id/second_pv1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:id="@+id/queding"
+        android:layout_alignParentBottom="true"
+        android:background="#da0428"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
